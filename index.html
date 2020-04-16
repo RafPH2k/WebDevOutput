@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <meta charset="UTF-8">
+    <Title>Start Grading</Title>
+    <link rel="stylesheet" type= "text/css" href="css/Style.css">
+</head>
+<body>
+    <a href = "Pictures.html">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Click to Start Grading
+        </a>
+    <script type="text/javascript">
+        document.addEventListener("mousemove",function(e){
+         var body = document.querySelector('body');
+         var heart = document.createElement("span");
+         var x = e.offsetX;
+         var y = e.offsetY;
+         heart.style.left = x+'px';
+         heart.style.top = y+'px';
+         var size = Math.random() * 100;
+         heart.style.width = 10+size+'px';
+         heart.style.height = 10+size+'px';
+         body.appendChild(heart);
+        
+         setTimeout(function(){
+          heart.remove();            
+         },2000);
+         })
+    </script>
+</body>
+</html> 

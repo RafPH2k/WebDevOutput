@@ -1,0 +1,117 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+    box-sizing: border-box;
+    
+}
+body
+{
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #050801;
+}
+a
+{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: antiquewhite;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s;
+    letter-spacing: 4px;
+}
+a:hover
+    {
+        background: antiquewhite;
+        color: #050801;
+        box-shadow: 0 0 5px antiquewhite,
+                    0 0 25px antiquewhite,
+                    0 0 50px antiquewhite,
+                    0 0 200px antiquewhite;
+        
+    }
+a span
+{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1)
+{
+    top: 0;
+    left: -100%
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,antiquewhite);
+    animation: animate1 1s linear infinite;
+    
+}
+@keyframes animate1
+{
+    0%
+    {
+        left: -100%
+    }
+    50%,100%
+    {
+        left: 100%
+    }
+}
+a span:nth-child(3)
+{
+    bottom: 0;
+    right: -100%
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,antiquewhite);
+    animation: animate3 1s linear infinite;
+    
+    
+}
+@keyframes animate3
+{
+    0%
+    {
+       right: -100%
+    }
+    50%,100%
+    {
+        right: 100%
+    }
+}
+span
+{
+    position: absolute;
+    background: url(heart.png);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    animation: animate 3s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        transform: translate(-50%, -1000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+    }
+
+}

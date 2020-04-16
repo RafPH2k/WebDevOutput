@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Panda Quiz!</title>
+<link href ="css/style3.css" rel ="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script src = "js/main.js"></script>
+
+</head>
+
+
+<body>
+    <body style="background-image: url(css/Back.jpg); background-size: cover">
+        <h1><center><font style = "Forte" font color = "white" font size = "34"> Panda Quiz!</font></center></h1>
+
+
+<form id = "quiz" name = "quiz">
+
+
+<p class = "questions">Where do pandas come from?</p>
+<input id = "textbox" type = "text" name = "question1">
+
+<p class = "questions">What sort of animal are pandas?</p>
+<input type = "radio" id = "mc" name = "question2" value = "Rodent"> Rodent<br>
+<input type = "radio" id = "mc" name = "question2" value = "Bear"> Bear<br>
+<input type = "radio" id = "mc" name = "question2" value = "Big Cat"> Big Cat<br>
+
+<p class = "questions">What's a baby panda called?</p>
+
+<input type = "radio" id = "mc" name = "question3" value = "Cub"> Cub<br>
+<input type = "radio" id = "mc" name = "question3" value = "Kitten"> Kitten<br>
+<input type = "radio" id = "mc" name = "question3" value = "Pup"> Pup<br>
+    
+<p class = "questions">What do pandas eat?</p>
+<input type = "radio" id = "mc" name = "question4" value = "Eucalyptus"> Eucalyptus<br>
+<input type = "radio" id = "mc" name = "question4" value = "Mint Leaves">Mint Leaves<br>
+<input type = "radio" id = "mc" name = "question4" value = "Bamboo">Bamboo<br>
+
+<p class = "questions">Why are pandas going extinct?</p>
+<input type = "radio" id = "mc" name = "question5" value = "Because they are losing habitat"> Because they are losing habitat<br>
+<input type = "radio" id = "mc" name = "question5" value = "Because they don't have enough food"> Because they don't have enough food<br>
+<input type = "radio" id = "mc" name = "question5" value = "Because they don't reproduce very fast"> Because they don't reproduce very fast<br>
+
+
+<input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+
+
+</form>
+
+<div id = "after_submit">
+<p id = "number_correct"></p>
+<p id = "message"></p>
+<img id = "picture">
+</div>
+
+
+</body>
+</html>
+    
+
+
+

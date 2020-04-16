@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Facts</title>
+        <link rel="stylesheet" type= "text/css" href="css/Style2.css">
+        
+        <h1 style="color:seashell;font-size:100px;">Panda Facts</h1>
+    <style>
+    </style>
+    </head>
+    
+    <body>
+        <body style="background-image: url(css/Back.jpg); background-size: cover">
+        <center>    
+        <div class="Container">
+            <div class="Button">
+            <a href="Quiz.html">
+                NEXT
+            </a>
+        
+        </div>
+            <div class="Video"></div>
+        <video controls autoplay>
+            <source src="Vids.mp4">
+        </video>
+            
+        </div>
+            </center>
+            
+    
+        <script type="text/javascript">
+        document.addEventListener("mousemove",function(e){
+         var body = document.querySelector('body');
+         var heart = document.createElement("span");
+         var x = e.offsetX;
+         var y = e.offsetY;
+         heart.style.left = x+'px';
+         heart.style.top = y+'px';
+         var size = Math.random() * 100;
+         heart.style.width = 10+size+'px';
+         heart.style.height = 10+size+'px';
+         body.appendChild(heart);
+        
+         setTimeout(function(){
+          heart.remove();            
+         },2000);
+         })
+    </script>
+          
+   </body>       
+</html>
